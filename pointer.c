@@ -5,41 +5,46 @@ void _swap(int *a , int *b);
 int main()
 {
 
-    // int num=23;
-    // int *ptr=&num;
-    // int _age = *ptr;
-    // printf("%d",_age);
+ 
+   int num=23;
+    int *ptr=&num;
+    int _age = *ptr;
+    printf("%d",_age);
+
 
     // ?address
-    // printf("%p",&_age);
+
+
+    printf("%p",&_age);
 
     // ! Question-1
 
-    // int x;
-    // int *ptr;
+    int x;
+    int *ptr;
 
-    // ptr = & x;
-    // *ptr = 0;
+    ptr = &x;
 
-    // printf("x=%d\n",x);
-    // printf("*ptr=%d\n\n",*ptr);
+    *ptr = 0;
 
-    // *ptr+=5;
+    printf("x=%d\n",x);
+    printf("*ptr=%d\n\n",*ptr);
 
-    // printf("x=%d\n",x);
-    // printf("*ptr=%d\n",*ptr);
+     *ptr+=5;
+
+    printf("x=%d\n",x);
+    printf("*ptr=%d\n",*ptr);
 
     // ! Question-2-----pointer to pointer
 
-    // int i =10;
-    // int *ptr = &i;
-    // int **pptr = &ptr;
+    int i =10;
+    int *ptr = &i;
+    int **pptr = &ptr;
 
-    // printf("%d",**pptr);
+    printf("%d",**pptr);
 
     // *pointer in function call
 
-    // ! call by value
+  
    
     int a = 10; 
     int b = 20;

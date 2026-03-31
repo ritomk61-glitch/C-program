@@ -4,33 +4,33 @@
 int main() {
 
     // *malloc memory
-    // int i;
-    // int *ptr;
+    int i;
+    int *ptr;
 
-    // ptr = (int *) malloc(5 * sizeof(int));
+    ptr = (int *) malloc(5 * sizeof(int));
    
-    // for(i = 0; i < 5; i++) {
-    //     printf("Enter price of item %d: ", i + 1);
-    //     scanf("%d", &ptr[i]);
-    // }  
+    for(i = 0; i < 5; i++) {
+        printf("Enter price of item %d: ", i + 1);
+        scanf("%d", &ptr[i]);
+    }  
 
-    // printf("You entered:\n");
-    // for(i = 0; i < 5; i++) {
-    //     printf("Item %d price = %d\n", i + 1, ptr[i]);
-    // }
+    printf("You entered:\n");
+    for(i = 0; i < 5; i++) {
+        printf("Item %d price = %d\n", i + 1, ptr[i]);
+    }
 
-    // free(ptr);
+    free(ptr);
+// ! another one
+    int *ptr;
+    int n;
+    printf("Enter n:");
+    scanf("%d", &n);
 
-    // int *ptr;
-    // int n;
-    // printf("Enter n:");
-    // scanf("%d", &n);
+    ptr = (int *) malloc (n * sizeof(int));
 
-    // ptr = (int *) malloc (n * sizeof(int));
-
-    // for(int i =0 ; i<n ; i++){
-    //     printf("%d \n",ptr[i]);
-    // }
+    for(int i =0 ; i<n ; i++){
+        printf("%d \n",ptr[i]);
+    }
 
 
     // * Realloc and also used calloc here
